@@ -24,7 +24,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "ischhfd83@rambler.ru"
+          git config --local user.email "ha"
           git config --local user.name "${{ github.repository_owner }}"
           git add -A
 
