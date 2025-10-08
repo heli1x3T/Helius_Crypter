@@ -6,7 +6,8 @@ on:
       - main
 
   schedule:
-    - cron: "* * * * *"
+    # Mỗi 10 phút chạy 1 lần
+    - cron: "*/10 * * * *"
 
 jobs:
   auto_commit:
@@ -19,33 +20,21 @@ jobs:
 
       - name: Modify last update
         run: |
-          d='DATE '`date '+%Y-%m-%d %H:%M:%S'`
-          echo $d > LOG
+          d="DATE $(date '+%Y-%m-%d %H:%M:%S')"
+          echo "$d" > LOG
 
       - name: Commit changes
         run: |
-          git config --local user.email "ha"
+          git config --local user.email "ha@example.com"
           git config --local user.name "${{ github.repository_owner }}"
-          git add -A
+          git add LOG
 
-          arr[0]="LOG"
-          arr[1]="LOG"
-          arr[2]="LOG"
-          arr[3]="LOG"
-          arr[4]="LOG"
-          arr[5]="LOG"
-          arr[6]="LOG"
-          arr[7]="LOG"
-          arr[8]="LOG"
-          arr[9]="LOG"
+          messages=("LOG" "Updated LOG" "Refresh LOG" "Auto commit LOG" "LOG updated" "Heartbeat" "Ping" "Tick" "Time update" "Cron 10m")
+          rand=$((RANDOM % ${#messages[@]}))
 
-          rand=$[$RANDOM % ${#arr[@]}]
+          git commit -m "${messages[$rand]}"
 
-          git commit -m "${arr[$rand]}"
-
-      - name: GitHub Push
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          force: true
-          directory: "."
           github_token: ${{ secrets.GITHUB_TOKEN }}
