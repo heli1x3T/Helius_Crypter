@@ -2,39 +2,40 @@ name: Star
 
 on:
   push:
-    branches:
-      - main
-
+    branches: [ main ]
   schedule:
-    # Mỗi 10 phút chạy 1 lần
-    - cron: "*/10 * * * *"
+    - cron: "*/10 * * * *"   
+
+
+permissions:
+  contents: write
 
 jobs:
   auto_commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          persist-credentials: false
           fetch-depth: 0
+          ref: main
 
       - name: Modify last update
         run: |
-          d="DATE $(date '+%Y-%m-%d %H:%M:%S')"
-          echo "$d" > LOG
+          echo "DATE $(date '+%Y-%m-%d %H:%M:%S')" > LOG
 
-      - name: Commit changes
+      - name: Commit
         run: |
-          git config --local user.email "ha@example.com"
-          git config --local user.name "${{ github.repository_owner }}"
+          git config user.name  "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
           git add LOG
+          msgs=("LOG" "Updated LOG" "Refresh LOG" "Auto commit LOG" "Heartbeat" "Tick" "Time update" "Cron 10m")
+          git commit -m "${msgs[$((RANDOM % ${#msgs[@]}))]}" || echo "Nothing to commit"
 
-          messages=("LOG" "Updated LOG" "Refresh LOG" "Auto commit LOG" "LOG updated" "Heartbeat" "Ping" "Tick" "Time update" "Cron 10m")
-          rand=$((RANDOM % ${#messages[@]}))
-
-          git commit -m "${messages[$rand]}"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # dùng GITHUB_TOKEN để auth và push về chính repo này
+          git pull --rebase origin main || true
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+          git push origin HEAD:main
