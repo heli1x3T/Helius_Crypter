@@ -35,7 +35,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # dùng GITHUB_TOKEN để auth và push về chính repo này
           git pull --rebase origin main || true
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
           git push origin HEAD:main
