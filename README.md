@@ -5,9 +5,10 @@ A React-based web application for academic research on antivirus evasion techniq
   
 [🌐 Website](https://helius-crypter.com/)
 
-![abn](https://github.com/user-attachments/assets/d36c70e0-a867-4df8-9cc5-092785c71c65)
 
-<img width="1800" height="754" alt="1" src="https://github.com/user-attachments/assets/7aa11014-efa1-4f62-8230-6c22804877ac" />
+<img width="1786" height="697" alt="2" src="https://github.com/user-attachments/assets/99942b94-fbd0-4042-be4a-0926136fb6ba" />
+
+
 
 </div>
 
@@ -45,9 +46,9 @@ This tool is designed exclusively for academic research, educational purposes, a
 
 <div align="center">
 
-![abb](https://github.com/user-attachments/assets/946432bd-cbae-4063-833e-e7614832ab2a)
+<img width="1089" height="575" alt="4" src="https://github.com/user-attachments/assets/0895c6b5-ab15-415b-bd4f-226e21589fd4" />
+<img width="1061" height="491" alt="5" src="https://github.com/user-attachments/assets/4f663065-22c6-4546-a78a-1cc1e39627b0" />
 
-![aac](https://github.com/user-attachments/assets/f51c25ed-130f-4246-801e-2e1dacbda5da)
 
 </div>
 
