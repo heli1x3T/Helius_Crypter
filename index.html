@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en" data-theme="hermes">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#00b94f" />
+  <meta name="description" content="Hermes Crypter — Private FUD payload encryption tool. AES-256-GCM + Polymorphic XOR. 0/Total UNDETECTED on VirusTotal. Contact @hermes_crypter on Telegram to get your license." />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:title" content="Hermes Crypter — Private FUD Encryption" />
+  <meta property="og:description" content="0/Total UNDETECTED. AES-256-GCM + Polymorphic XOR morphing. Bypasses Windows Defender, Kaspersky, ESET & 59 more." />
+  <meta property="og:type" content="website" />
+  <title>Hermes Crypter — Private FUD Encryption</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="siteHeader">
+    <a class="logo" href="#top" aria-label="Hermes Crypter">
+      <span class="logo-dot"></span>
+      HERMES CRYPTER
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#bypass">AV Bypass</a>
+    </nav>
+    <a class="btn-header" href="https://t.me/hermes_crypter" target="_blank" rel="noopener" id="headerCta">
+      Get License ↗
+    </a>
+  </header>
+
+  <main>
+    <!-- ── HERO ── -->
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="constellation" class="constellation" aria-hidden="true"></canvas>
+
+      <p class="hero-eyebrow reveal">
+        <i class="pulse-dot"></i>
+        Private FUD Build &nbsp;·&nbsp; 0/Total Undetected
+      </p>
+
+      <h1 class="hero-title reveal" id="heroTitle">
+        Hermes<br />
+        <span class="accent">Crypter</span>
+      </h1>
+
+      <p class="hero-sub reveal">
+        A private Fully Undetectable (FUD) payload encryption tool for authorized red team operators.
+        Multi-layer AES-256-GCM encryption with polymorphic XOR morphing —
+        <strong>bypassing every AV and EDR engine</strong> on the market.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a class="btn-primary magnetic" href="https://t.me/hermes_crypter" target="_blank" rel="noopener" id="heroCta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2 15 22l-4-9-9-4 20-7Z"/></svg>
+          Get License on Telegram
+        </a>
+        <a class="btn-outline" href="#features" id="viewFeatures">View Features ↓</a>
+      </div>
+
+      <div class="hero-badges reveal" aria-label="Key capabilities">
+        <span class="badge"><i class="badge-icon">🔐</i> AES-256-GCM</span>
+        <span class="badge"><i class="badge-icon">🌀</i> Polymorphic XOR</span>
+        <span class="badge"><i class="badge-icon">🛡</i> 0 / Total VT</span>
+        <span class="badge"><i class="badge-icon">🌙</i> Silent Execution</span>
+        <span class="badge"><i class="badge-icon">⚡</i> All C2 Supported</span>
+      </div>
+    </section>
+
+    <!-- ── MARQUEE ── -->
+    <div class="marquee-band" aria-label="Crypter capabilities">
+      <div class="marquee-track" id="marqueeTrack">
+        <span>HERMES CRYPTER</span><i>✦</i>
+        <span>0/TOTAL UNDETECTED</span><i>✦</i>
+        <span>WINDOWS DEFENDER</span><i>✦</i>
+        <span>KASPERSKY</span><i>✦</i>
+        <span>BITDEFENDER</span><i>✦</i>
+        <span>ESET NOD32</span><i>✦</i>
+        <span>AES-256-GCM</span><i>✦</i>
+        <span>POLYMORPHIC XOR</span><i>✦</i>
+        <span>FUD GUARANTEE</span><i>✦</i>
+        <span>PRIVATE BUILD</span><i>✦</i>
+        <span>HERMES CRYPTER</span><i>✦</i>
+        <span>0/TOTAL UNDETECTED</span><i>✦</i>
+        <span>WINDOWS DEFENDER</span><i>✦</i>
+        <span>KASPERSKY</span><i>✦</i>
+        <span>BITDEFENDER</span><i>✦</i>
+        <span>ESET NOD32</span><i>✦</i>
+        <span>AES-256-GCM</span><i>✦</i>
+        <span>POLYMORPHIC XOR</span><i>✦</i>
+        <span>FUD GUARANTEE</span><i>✦</i>
+        <span>PRIVATE BUILD</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ── STATS ── -->
+    <section class="stats-section" aria-label="Key statistics">
+      <div class="stats-grid">
+        <div class="stat-card reveal" id="stat0">
+          <div class="stat-num" data-target="0" data-suffix="/62">0/62</div>
+          <div class="stat-label">VirusTotal Detection</div>
+        </div>
+        <div class="stat-card reveal" id="stat1">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Platforms Supported</div>
+        </div>
+        <div class="stat-card reveal" id="stat2">
+          <div class="stat-num">256</div>
+          <div class="stat-label">AES Key Bits</div>
+        </div>
+        <div class="stat-card reveal" id="stat3">
+          <div class="stat-num">600K</div>
+          <div class="stat-label">PBKDF2 Iterations</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURES ── -->
+    <section class="features-section" id="features" aria-labelledby="featuresTitle">
+      <div class="features-header">
+        <div class="reveal">
+          <p class="section-label">02 · Core Features</p>
+          <h2 class="section-title" id="featuresTitle">Built to<br />Evade.</h2>
+        </div>
+        <p class="section-body reveal">
+          Every layer of Hermes Crypter is engineered to defeat a specific detection vector —
+          from static signature scanners to behavioral runtime analysis, memory forensics, and cloud sandboxes.
+        </p>
+      </div>
+
+      <div class="features-grid" id="featuresGrid">
+        <!-- populated by JS -->
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ── -->
+    <section class="how-section" id="how" aria-labelledby="howTitle">
+      <div class="how-inner">
+        <div class="how-left">
+          <p class="section-label reveal">03 · Encryption Pipeline</p>
+          <h2 class="section-title reveal" id="howTitle">Three Layers.<br />Zero Detections.</h2>
+          <div class="steps" id="steps">
+            <!-- populated by JS -->
+          </div>
+        </div>
+
+        <div class="code-card reveal" aria-label="Encryption output log example">
+          <div class="code-topbar" aria-hidden="true">
+            <span class="code-dot dot-red"></span>
+            <span class="code-dot dot-yellow"></span>
+            <span class="code-dot dot-green"></span>
+            <span class="code-filename">hermes-output.log</span>
+          </div>
+          <div class="code-body" id="codeBody">
+            <!-- populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── AV COVERAGE ── -->
+    <section class="detection-section" id="bypass" aria-labelledby="bypassTitle">
+      <div class="detection-inner">
+        <div class="detection-header reveal">
+          <p class="section-label">04 · AV/EDR Bypass Coverage</p>
+          <h2 class="section-title" id="bypassTitle">62 Engines.<br />0 Detections.</h2>
+        </div>
+        <div class="av-grid" id="avGrid">
+          <!-- populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-section" id="license" aria-labelledby="ctaTitle">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="cta-inner">
+        <p class="cta-label reveal">05 · Get Access</p>
+        <h2 class="cta-title reveal" id="ctaTitle">Get Your<br />License Key.</h2>
+        <p class="cta-sub reveal">
+          Contact <strong>@hermes_crypter</strong> on Telegram to purchase your private license key.
+          Each key grants access to download encrypted builds.
+          For authorized security research and penetration testing only.
+        </p>
+        <a class="btn-dark magnetic reveal" href="https://t.me/hermes_crypter" target="_blank" rel="noopener" id="ctaBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2 15 22l-4-9-9-4 20-7Z"/></svg>
+          Contact @hermes_crypter
+        </a>
+        <p class="cta-note reveal">License keys are personal and non-transferable. No public distribution.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-logo">Hermes Crypter <span>© 2025</span></div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#bypass">AV Bypass</a>
+      <a href="https://t.me/hermes_crypter" target="_blank" rel="noopener">Telegram</a>
+    </nav>
+    <div class="footer-copy">For authorized use only</div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

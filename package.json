@@ -1,0 +1,14 @@
+{
+  "name": "hermes-landing",
+  "version": "1.0.0",
+  "description": "Hermes Crypter — FUD Payload Encryption Landing Page",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
