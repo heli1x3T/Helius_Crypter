@@ -8,7 +8,8 @@ Multi-layer AES-256-GCM encryption with polymorphic XOR morphing — achieving *
 [🌐 Live Demo](https://hermescrypter.qzz.io/) &nbsp;·&nbsp; [💬 Telegram](https://t.me/hermes_crypter)
 
 <!-- ADD SCREENSHOT HERE -->
-<img width="2988" height="1482" alt="b" src="https://github.com/user-attachments/assets/9500230e-e517-42a5-9e67-19ace05021e5" />
+<img width="2988" height="1482" alt="b" src="https://github.com/user-attachments/assets/3dc42040-5314-47bb-8c10-17dbb0a2106c" />
+
 
 </div>
 
@@ -38,8 +39,9 @@ Telegram channel: [@hermes0x01](https://t.me/hermes0x01)
 
 <div align="center">
 
-<img width="2468" height="1502" alt="c" src="https://github.com/user-attachments/assets/c87f13ac-0beb-4b3d-b4da-f885104f3557" />
-<img width="2834" height="1352" alt="d" src="https://github.com/user-attachments/assets/590ed1e5-0b39-4d79-8df0-cb35143f4e7e" />
+<img width="2834" height="1352" alt="d" src="https://github.com/user-attachments/assets/53ec8e2d-7a98-4ca5-a5c9-b958b569782d" />
+<img width="2468" height="1502" alt="c" src="https://github.com/user-attachments/assets/781a2425-020b-4ff9-850c-dda4b8c497dc" />
+
 
 </div>
 
