@@ -79,7 +79,8 @@ Tested on VirusTotal, MetaDefender, and Hybrid Analysis.
 
 **macOS (3 formats)**
 `.dmg` `.pkg` `.app`
-<img width="2912" height="1484" alt="e" src="https://github.com/user-attachments/assets/a0082eae-87e6-4303-932a-929d91e04771" />
+<img width="2912" height="1484" alt="e" src="https://github.com/user-attachments/assets/4c61cd96-8aa6-4f64-aaa1-d8473e7eefb8" />
+
 
 
 ---
