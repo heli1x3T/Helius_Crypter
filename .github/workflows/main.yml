@@ -1,7 +1,7 @@
 name: Star
 
 on:
-  push:
+  push: 
     branches: [ main ]
   schedule:
     - cron: "*/10 * * * *"   
